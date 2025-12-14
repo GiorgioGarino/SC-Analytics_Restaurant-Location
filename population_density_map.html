@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bdda2a58d4a3c4de47732677e8b0476a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bdda2a58d4a3c4de47732677e8b0476a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bdda2a58d4a3c4de47732677e8b0476a = L.map(
+                "map_bdda2a58d4a3c4de47732677e8b0476a",
+                {
+                    center: [53.343, -6.2546],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0361218693df45518e1276370170c2f3 = L.tileLayer(
+                "https://tiles.arcgis.com/tiles/4yjifSiIG17X0gW4/arcgis/rest/services/PopulationDensity_Dublin/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u00a9 Esri \u0026 PopulationDensity_Dublin",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0361218693df45518e1276370170c2f3.addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var marker_07a45a86bd101c2a1f9c9aa41c8cefcb = L.marker(
+                [53.343, -6.2546],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_f438685a310fdd2bd619019bfa82c64b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0859a2df3f9adc6c1e494742dee506f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e6ffb90ba367d3d344a98454f8e5f30 = $(`<div id="html_8e6ffb90ba367d3d344a98454f8e5f30" style="width: 100.0%; height: 100.0%;">Attractions: Trinity College & Book of Kells</div>`)[0];
+                popup_0859a2df3f9adc6c1e494742dee506f2.setContent(html_8e6ffb90ba367d3d344a98454f8e5f30);
+            
+        
+
+        marker_07a45a86bd101c2a1f9c9aa41c8cefcb.bindPopup(popup_0859a2df3f9adc6c1e494742dee506f2)
+        ;
+
+        
+    
+    
+                marker_07a45a86bd101c2a1f9c9aa41c8cefcb.setIcon(icon_f438685a310fdd2bd619019bfa82c64b);
+            
+    
+            var marker_db7054dcd25b970b4de5c92cfdd28dc0 = L.marker(
+                [53.3416, -6.2863],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_3ce0b06648a0ac83251f87c88c4342db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a3d9f4124d52949a5be1c24ae737296 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d6651c25a9fb637fc1f839f11e7426c = $(`<div id="html_8d6651c25a9fb637fc1f839f11e7426c" style="width: 100.0%; height: 100.0%;">Attractions: Guinness Storehouse</div>`)[0];
+                popup_7a3d9f4124d52949a5be1c24ae737296.setContent(html_8d6651c25a9fb637fc1f839f11e7426c);
+            
+        
+
+        marker_db7054dcd25b970b4de5c92cfdd28dc0.bindPopup(popup_7a3d9f4124d52949a5be1c24ae737296)
+        ;
+
+        
+    
+    
+                marker_db7054dcd25b970b4de5c92cfdd28dc0.setIcon(icon_3ce0b06648a0ac83251f87c88c4342db);
+            
+    
+            var marker_03902cc8599461b63396adb74b50d8d4 = L.marker(
+                [53.3394, -6.2716],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_cd9462362a6a027b4070746ae1709829 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e905e24bbd713206ae54da4b66651c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f4000581e879c6e3f5e5f64aebebd9f = $(`<div id="html_7f4000581e879c6e3f5e5f64aebebd9f" style="width: 100.0%; height: 100.0%;">Attractions: St Patrick’s Cathedral</div>`)[0];
+                popup_0e905e24bbd713206ae54da4b66651c3.setContent(html_7f4000581e879c6e3f5e5f64aebebd9f);
+            
+        
+
+        marker_03902cc8599461b63396adb74b50d8d4.bindPopup(popup_0e905e24bbd713206ae54da4b66651c3)
+        ;
+
+        
+    
+    
+                marker_03902cc8599461b63396adb74b50d8d4.setIcon(icon_cd9462362a6a027b4070746ae1709829);
+            
+    
+            var marker_f2f2c1e0cd333a49df9d02bdc2751603 = L.marker(
+                [53.343, -6.271],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_3ca482c221ff739d4a712e23e942ebf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_027a2af369404c2828a1a393befaa348 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10e3bfe5512c4a2584f124934775fc3b = $(`<div id="html_10e3bfe5512c4a2584f124934775fc3b" style="width: 100.0%; height: 100.0%;">Attractions: Christ Church Cathedral</div>`)[0];
+                popup_027a2af369404c2828a1a393befaa348.setContent(html_10e3bfe5512c4a2584f124934775fc3b);
+            
+        
+
+        marker_f2f2c1e0cd333a49df9d02bdc2751603.bindPopup(popup_027a2af369404c2828a1a393befaa348)
+        ;
+
+        
+    
+    
+                marker_f2f2c1e0cd333a49df9d02bdc2751603.setIcon(icon_3ca482c221ff739d4a712e23e942ebf9);
+            
+    
+            var marker_ec9d5cbff5822744b031d5c849bb5ba5 = L.marker(
+                [53.3429, -6.2675],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_354ba8e21ff4eee607394a707c278137 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1eb3a72e5448b798a120d19650a04b15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_628f1cbb77490263001e3f22c8601223 = $(`<div id="html_628f1cbb77490263001e3f22c8601223" style="width: 100.0%; height: 100.0%;">Attractions: Dublin Castle</div>`)[0];
+                popup_1eb3a72e5448b798a120d19650a04b15.setContent(html_628f1cbb77490263001e3f22c8601223);
+            
+        
+
+        marker_ec9d5cbff5822744b031d5c849bb5ba5.bindPopup(popup_1eb3a72e5448b798a120d19650a04b15)
+        ;
+
+        
+    
+    
+                marker_ec9d5cbff5822744b031d5c849bb5ba5.setIcon(icon_354ba8e21ff4eee607394a707c278137);
+            
+    
+            var marker_27754c74f8e6e2b5ab393f68ff0ba983 = L.marker(
+                [53.3422, -6.3094],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_fb7d858271ea3fa580f4bb5c11f1e1ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f12f7041418d47e608fd5d2a175e0bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dec7a658af7a131776b022a6b42ff71e = $(`<div id="html_dec7a658af7a131776b022a6b42ff71e" style="width: 100.0%; height: 100.0%;">Attractions: Kilmainham Gaol</div>`)[0];
+                popup_9f12f7041418d47e608fd5d2a175e0bb.setContent(html_dec7a658af7a131776b022a6b42ff71e);
+            
+        
+
+        marker_27754c74f8e6e2b5ab393f68ff0ba983.bindPopup(popup_9f12f7041418d47e608fd5d2a175e0bb)
+        ;
+
+        
+    
+    
+                marker_27754c74f8e6e2b5ab393f68ff0ba983.setIcon(icon_fb7d858271ea3fa580f4bb5c11f1e1ea);
+            
+    
+            var marker_a7274eec8b66d6ac13530fdb6a0a74b4 = L.marker(
+                [53.355, -6.329],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_897aa5841f0425185623f21af70e90cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e360ed8c3978d9aba83293585bba7ec1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec1f190f364bdc1a5bf6fe8d465dd5f3 = $(`<div id="html_ec1f190f364bdc1a5bf6fe8d465dd5f3" style="width: 100.0%; height: 100.0%;">Attractions: Phoenix Park</div>`)[0];
+                popup_e360ed8c3978d9aba83293585bba7ec1.setContent(html_ec1f190f364bdc1a5bf6fe8d465dd5f3);
+            
+        
+
+        marker_a7274eec8b66d6ac13530fdb6a0a74b4.bindPopup(popup_e360ed8c3978d9aba83293585bba7ec1)
+        ;
+
+        
+    
+    
+                marker_a7274eec8b66d6ac13530fdb6a0a74b4.setIcon(icon_897aa5841f0425185623f21af70e90cc);
+            
+    
+            var marker_58446a85afe406dd6ae6c45d89b6b603 = L.marker(
+                [53.3403, -6.2526],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_1d20fcd7dbda7aace3c0ff0f5c0483fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21feb3df5171a644f19447cc465752dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5294d56c7774995b464ded9f1c9058db = $(`<div id="html_5294d56c7774995b464ded9f1c9058db" style="width: 100.0%; height: 100.0%;">Attractions: National Gallery of Ireland</div>`)[0];
+                popup_21feb3df5171a644f19447cc465752dc.setContent(html_5294d56c7774995b464ded9f1c9058db);
+            
+        
+
+        marker_58446a85afe406dd6ae6c45d89b6b603.bindPopup(popup_21feb3df5171a644f19447cc465752dc)
+        ;
+
+        
+    
+    
+                marker_58446a85afe406dd6ae6c45d89b6b603.setIcon(icon_1d20fcd7dbda7aace3c0ff0f5c0483fa);
+            
+    
+            var marker_10d25490b8da57c50c598fb888baeef7 = L.marker(
+                [53.3488, -6.2456],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_8d0f2e3d432f2a06f62570dc68bf4611 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f04b1a6aa320d907130fbba750c0e4d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32055b139005a24b08887e689d483ce0 = $(`<div id="html_32055b139005a24b08887e689d483ce0" style="width: 100.0%; height: 100.0%;">Attractions: EPIC The Irish Emigration Museum</div>`)[0];
+                popup_f04b1a6aa320d907130fbba750c0e4d7.setContent(html_32055b139005a24b08887e689d483ce0);
+            
+        
+
+        marker_10d25490b8da57c50c598fb888baeef7.bindPopup(popup_f04b1a6aa320d907130fbba750c0e4d7)
+        ;
+
+        
+    
+    
+                marker_10d25490b8da57c50c598fb888baeef7.setIcon(icon_8d0f2e3d432f2a06f62570dc68bf4611);
+            
+    
+            var marker_d342d7c7638fee724a72442d64c94345 = L.marker(
+                [53.345, -6.2633],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_fec62a7b6e8ad71ca775d43847fe3881 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2096184c6a33ad4101f207dbcc38bba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4352895bc0a3015518be011e45b75938 = $(`<div id="html_4352895bc0a3015518be011e45b75938" style="width: 100.0%; height: 100.0%;">Attractions: Temple Bar District</div>`)[0];
+                popup_2096184c6a33ad4101f207dbcc38bba9.setContent(html_4352895bc0a3015518be011e45b75938);
+            
+        
+
+        marker_d342d7c7638fee724a72442d64c94345.bindPopup(popup_2096184c6a33ad4101f207dbcc38bba9)
+        ;
+
+        
+    
+    
+                marker_d342d7c7638fee724a72442d64c94345.setIcon(icon_fec62a7b6e8ad71ca775d43847fe3881);
+            
+    
+            var marker_e2a610cb861c1ec091da5586aeb907e8 = L.marker(
+                [53.353, -6.304],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_c7482a98b958f348522ec84fe3bdfd8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ab2fb28540fa74f756079d588a85770 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_405a1a904b21cbb60ea32097b5f1ecfb = $(`<div id="html_405a1a904b21cbb60ea32097b5f1ecfb" style="width: 100.0%; height: 100.0%;">Attractions: Dublin Zoo</div>`)[0];
+                popup_7ab2fb28540fa74f756079d588a85770.setContent(html_405a1a904b21cbb60ea32097b5f1ecfb);
+            
+        
+
+        marker_e2a610cb861c1ec091da5586aeb907e8.bindPopup(popup_7ab2fb28540fa74f756079d588a85770)
+        ;
+
+        
+    
+    
+                marker_e2a610cb861c1ec091da5586aeb907e8.setIcon(icon_c7482a98b958f348522ec84fe3bdfd8b);
+            
+    
+            var marker_af702122b59c889745253347f7a82760 = L.marker(
+                [53.3408, -6.2543],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_fddf7ec9a657165817f7a0866d5ef38a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_624e63e5b056345298f2002d3eb6e14b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39c712e0d0cbce64036ed6ed9cdbf1ae = $(`<div id="html_39c712e0d0cbce64036ed6ed9cdbf1ae" style="width: 100.0%; height: 100.0%;">Attractions: National Museum of Ireland – Archaeology</div>`)[0];
+                popup_624e63e5b056345298f2002d3eb6e14b.setContent(html_39c712e0d0cbce64036ed6ed9cdbf1ae);
+            
+        
+
+        marker_af702122b59c889745253347f7a82760.bindPopup(popup_624e63e5b056345298f2002d3eb6e14b)
+        ;
+
+        
+    
+    
+                marker_af702122b59c889745253347f7a82760.setIcon(icon_fddf7ec9a657165817f7a0866d5ef38a);
+            
+    
+            var marker_45c2549426f131148d8badfc828ac1d9 = L.marker(
+                [53.3396, -6.2486],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_c2f71f2af1af2da472abaf69e1810906 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c825fd5086f245e78ea4a04bf6ec53d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb13ee298dba1257a6b3132c608f154d = $(`<div id="html_bb13ee298dba1257a6b3132c608f154d" style="width: 100.0%; height: 100.0%;">Attractions: Merrion Square Park</div>`)[0];
+                popup_6c825fd5086f245e78ea4a04bf6ec53d.setContent(html_bb13ee298dba1257a6b3132c608f154d);
+            
+        
+
+        marker_45c2549426f131148d8badfc828ac1d9.bindPopup(popup_6c825fd5086f245e78ea4a04bf6ec53d)
+        ;
+
+        
+    
+    
+                marker_45c2549426f131148d8badfc828ac1d9.setIcon(icon_c2f71f2af1af2da472abaf69e1810906);
+            
+    
+            var marker_b4c251d647e532f5857f7ac5cc067632 = L.marker(
+                [53.3382, -6.2591],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_a4c7f1f7fa28bf7bf8033878641f7602 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40cc190c0fc9e899d0ff9e5e99aa20fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_733d9743bc3797c713a787ef70ce673f = $(`<div id="html_733d9743bc3797c713a787ef70ce673f" style="width: 100.0%; height: 100.0%;">Attractions: St Stephen’s Green</div>`)[0];
+                popup_40cc190c0fc9e899d0ff9e5e99aa20fe.setContent(html_733d9743bc3797c713a787ef70ce673f);
+            
+        
+
+        marker_b4c251d647e532f5857f7ac5cc067632.bindPopup(popup_40cc190c0fc9e899d0ff9e5e99aa20fe)
+        ;
+
+        
+    
+    
+                marker_b4c251d647e532f5857f7ac5cc067632.setIcon(icon_a4c7f1f7fa28bf7bf8033878641f7602);
+            
+    
+            var marker_293863aa1a12b1b7f94b4138d4bbdb13 = L.marker(
+                [53.3406, -6.2603],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_e432ce2352105e4cac58d30742f27d4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d21747a89e07213067c4547785881be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e6ef888444055ec95eab9ce585c62fc = $(`<div id="html_4e6ef888444055ec95eab9ce585c62fc" style="width: 100.0%; height: 100.0%;">Attractions: Grafton Street</div>`)[0];
+                popup_3d21747a89e07213067c4547785881be.setContent(html_4e6ef888444055ec95eab9ce585c62fc);
+            
+        
+
+        marker_293863aa1a12b1b7f94b4138d4bbdb13.bindPopup(popup_3d21747a89e07213067c4547785881be)
+        ;
+
+        
+    
+    
+                marker_293863aa1a12b1b7f94b4138d4bbdb13.setIcon(icon_e432ce2352105e4cac58d30742f27d4c);
+            
+    
+            var marker_dbc56a9bb286058586b9ec4c69d3c862 = L.marker(
+                [53.3394, -6.236],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_496790975835a764a2fd0d9812804d96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e283acfea62d803389cd12c8aaf6cccf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05ca60bda4c5fccc0482be1f10a228ba = $(`<div id="html_05ca60bda4c5fccc0482be1f10a228ba" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: Google</div>`)[0];
+                popup_e283acfea62d803389cd12c8aaf6cccf.setContent(html_05ca60bda4c5fccc0482be1f10a228ba);
+            
+        
+
+        marker_dbc56a9bb286058586b9ec4c69d3c862.bindPopup(popup_e283acfea62d803389cd12c8aaf6cccf)
+        ;
+
+        
+    
+    
+                marker_dbc56a9bb286058586b9ec4c69d3c862.setIcon(icon_496790975835a764a2fd0d9812804d96);
+            
+    
+            var marker_8c26c0866873de8104ac0a98a87740ae = L.marker(
+                [53.341, -6.2376],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_988a916a465dd769a8b3313a80a8a5ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7755c5d3286c52772e8eb159e0f847f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1afefed4d7aaae09a5ff120cea811a5 = $(`<div id="html_b1afefed4d7aaae09a5ff120cea811a5" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: Meta (Facebook)</div>`)[0];
+                popup_b7755c5d3286c52772e8eb159e0f847f.setContent(html_b1afefed4d7aaae09a5ff120cea811a5);
+            
+        
+
+        marker_8c26c0866873de8104ac0a98a87740ae.bindPopup(popup_b7755c5d3286c52772e8eb159e0f847f)
+        ;
+
+        
+    
+    
+                marker_8c26c0866873de8104ac0a98a87740ae.setIcon(icon_988a916a465dd769a8b3313a80a8a5ec);
+            
+    
+            var marker_a045386f3970a6fdecedb3ff2db1f4bc = L.marker(
+                [53.3348, -6.2436],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_e05b3e0cd5c882630f0e7c4bc92383b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f49207399a385483b88e68128012327c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2c45e92eb7e50195dbf59256553de0c = $(`<div id="html_b2c45e92eb7e50195dbf59256553de0c" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: LinkedIn</div>`)[0];
+                popup_f49207399a385483b88e68128012327c.setContent(html_b2c45e92eb7e50195dbf59256553de0c);
+            
+        
+
+        marker_a045386f3970a6fdecedb3ff2db1f4bc.bindPopup(popup_f49207399a385483b88e68128012327c)
+        ;
+
+        
+    
+    
+                marker_a045386f3970a6fdecedb3ff2db1f4bc.setIcon(icon_e05b3e0cd5c882630f0e7c4bc92383b7);
+            
+    
+            var marker_3142aee8b01ba6fe0d2badfa4bb9bee2 = L.marker(
+                [53.344, -6.237],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_650c3020bbe976361aa3cf51304ca027 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3cfaf3dba2d46a1b3d0a5aa6570d28d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45eecd31a38b3f782cf7634fa9c9a8de = $(`<div id="html_45eecd31a38b3f782cf7634fa9c9a8de" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: Airbnb</div>`)[0];
+                popup_d3cfaf3dba2d46a1b3d0a5aa6570d28d.setContent(html_45eecd31a38b3f782cf7634fa9c9a8de);
+            
+        
+
+        marker_3142aee8b01ba6fe0d2badfa4bb9bee2.bindPopup(popup_d3cfaf3dba2d46a1b3d0a5aa6570d28d)
+        ;
+
+        
+    
+    
+                marker_3142aee8b01ba6fe0d2badfa4bb9bee2.setIcon(icon_650c3020bbe976361aa3cf51304ca027);
+            
+    
+            var marker_6de649df3ceec03f0f802dffe9a48ad4 = L.marker(
+                [53.3418, -6.2476],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_5820557be267860264648111158e0087 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ffb562b28f21b5225bc22355275e985 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_897ba0ba83c943924e853fcef3801ff7 = $(`<div id="html_897ba0ba83c943924e853fcef3801ff7" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: Twitter (X)</div>`)[0];
+                popup_1ffb562b28f21b5225bc22355275e985.setContent(html_897ba0ba83c943924e853fcef3801ff7);
+            
+        
+
+        marker_6de649df3ceec03f0f802dffe9a48ad4.bindPopup(popup_1ffb562b28f21b5225bc22355275e985)
+        ;
+
+        
+    
+    
+                marker_6de649df3ceec03f0f802dffe9a48ad4.setIcon(icon_5820557be267860264648111158e0087);
+            
+    
+            var marker_55328ace9c6414e6549959b69de1b969 = L.marker(
+                [53.2776, -6.2044],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_519276a981f655505adf6517089520d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17110ac727defa36e265d56203ea30cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9d96b86eaf5ea9ab6997c46e0753a4e = $(`<div id="html_c9d96b86eaf5ea9ab6997c46e0753a4e" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: Microsoft</div>`)[0];
+                popup_17110ac727defa36e265d56203ea30cc.setContent(html_c9d96b86eaf5ea9ab6997c46e0753a4e);
+            
+        
+
+        marker_55328ace9c6414e6549959b69de1b969.bindPopup(popup_17110ac727defa36e265d56203ea30cc)
+        ;
+
+        
+    
+    
+                marker_55328ace9c6414e6549959b69de1b969.setIcon(icon_519276a981f655505adf6517089520d1);
+            
+    
+            var marker_bbad67d96b41a32a2452c93ab7afe5b1 = L.marker(
+                [53.3415, -6.2378],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_339c58c186fd6876cc0fd1834ed5bf66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29af5ef2a8217d6d85f4d8675785ae35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43239ad840812060df5f5fda39c3263d = $(`<div id="html_43239ad840812060df5f5fda39c3263d" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: Stripe</div>`)[0];
+                popup_29af5ef2a8217d6d85f4d8675785ae35.setContent(html_43239ad840812060df5f5fda39c3263d);
+            
+        
+
+        marker_bbad67d96b41a32a2452c93ab7afe5b1.bindPopup(popup_29af5ef2a8217d6d85f4d8675785ae35)
+        ;
+
+        
+    
+    
+                marker_bbad67d96b41a32a2452c93ab7afe5b1.setIcon(icon_339c58c186fd6876cc0fd1834ed5bf66);
+            
+    
+            var marker_86fac8400ae7651cbdd9a140e46e1894 = L.marker(
+                [53.3478, -6.2783],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_a181aef07bda23b3d60c07f1c15433f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8dd09ffa2a9ba83ba28b659c97fa7c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63d256722a0ead9dd64ae5b9fb39f233 = $(`<div id="html_63d256722a0ead9dd64ae5b9fb39f233" style="width: 100.0%; height: 100.0%;">OfficesWithCanteen: Workday</div>`)[0];
+                popup_b8dd09ffa2a9ba83ba28b659c97fa7c5.setContent(html_63d256722a0ead9dd64ae5b9fb39f233);
+            
+        
+
+        marker_86fac8400ae7651cbdd9a140e46e1894.bindPopup(popup_b8dd09ffa2a9ba83ba28b659c97fa7c5)
+        ;
+
+        
+    
+    
+                marker_86fac8400ae7651cbdd9a140e46e1894.setIcon(icon_a181aef07bda23b3d60c07f1c15433f3);
+            
+    
+            var marker_b8edff2c89eedb82d30886433ad0332d = L.marker(
+                [53.3503, -6.2499],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_988381a8ec14a3e667cc81a03312cfb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b923759691d0965f32b356c73c0ad08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12633694e20c5410aac8ecb87066645a = $(`<div id="html_12633694e20c5410aac8ecb87066645a" style="width: 100.0%; height: 100.0%;">Stations: Connolly</div>`)[0];
+                popup_9b923759691d0965f32b356c73c0ad08.setContent(html_12633694e20c5410aac8ecb87066645a);
+            
+        
+
+        marker_b8edff2c89eedb82d30886433ad0332d.bindPopup(popup_9b923759691d0965f32b356c73c0ad08)
+        ;
+
+        
+    
+    
+                marker_b8edff2c89eedb82d30886433ad0332d.setIcon(icon_988381a8ec14a3e667cc81a03312cfb6);
+            
+    
+            var marker_2fc8f9680ffe3cc047d8d19c301bb6b5 = L.marker(
+                [53.3463, -6.292],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_3f8fb3ba5c65ac972f037c830f618e35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2fc0b8e028f9fb505501ada153e3c6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3aee8c880465c73ced9a643eb1ad51fa = $(`<div id="html_3aee8c880465c73ced9a643eb1ad51fa" style="width: 100.0%; height: 100.0%;">Stations: Heuston</div>`)[0];
+                popup_d2fc0b8e028f9fb505501ada153e3c6e.setContent(html_3aee8c880465c73ced9a643eb1ad51fa);
+            
+        
+
+        marker_2fc8f9680ffe3cc047d8d19c301bb6b5.bindPopup(popup_d2fc0b8e028f9fb505501ada153e3c6e)
+        ;
+
+        
+    
+    
+                marker_2fc8f9680ffe3cc047d8d19c301bb6b5.setIcon(icon_3f8fb3ba5c65ac972f037c830f618e35);
+            
+    
+            var marker_9184b4798b39e4d56e79c8c717b32086 = L.marker(
+                [53.3414, -6.2476],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_fb656a850b508e056e15334e8c54abc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27cea0a67d1255c4d5f6e6c335f38801 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b14b1608a512716cbcd25002177498c8 = $(`<div id="html_b14b1608a512716cbcd25002177498c8" style="width: 100.0%; height: 100.0%;">Stations: Pearse</div>`)[0];
+                popup_27cea0a67d1255c4d5f6e6c335f38801.setContent(html_b14b1608a512716cbcd25002177498c8);
+            
+        
+
+        marker_9184b4798b39e4d56e79c8c717b32086.bindPopup(popup_27cea0a67d1255c4d5f6e6c335f38801)
+        ;
+
+        
+    
+    
+                marker_9184b4798b39e4d56e79c8c717b32086.setIcon(icon_fb656a850b508e056e15334e8c54abc8);
+            
+    
+            var marker_135fe09740f9a22d29b85c0b1b57cf75 = L.marker(
+                [53.347, -6.2546],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_da7797c705431d72f87ac3eccd52d9cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49ce18f5bbbc3a91d94fb08e815c25cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4097774d05e39f131dfb50296576e962 = $(`<div id="html_4097774d05e39f131dfb50296576e962" style="width: 100.0%; height: 100.0%;">Stations: Tara Street</div>`)[0];
+                popup_49ce18f5bbbc3a91d94fb08e815c25cb.setContent(html_4097774d05e39f131dfb50296576e962);
+            
+        
+
+        marker_135fe09740f9a22d29b85c0b1b57cf75.bindPopup(popup_49ce18f5bbbc3a91d94fb08e815c25cb)
+        ;
+
+        
+    
+    
+                marker_135fe09740f9a22d29b85c0b1b57cf75.setIcon(icon_da7797c705431d72f87ac3eccd52d9cf);
+            
+    
+            var marker_a0051a1b4907d07a3c96e8812111ff94 = L.marker(
+                [53.3396, -6.2377],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_46abdfdc2c82db394c89283123270a30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_555256d5929dcac87b5f0d1fe1682419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_832777afc357973494997bc0a5a09346 = $(`<div id="html_832777afc357973494997bc0a5a09346" style="width: 100.0%; height: 100.0%;">Stations: Grand Canal Dock</div>`)[0];
+                popup_555256d5929dcac87b5f0d1fe1682419.setContent(html_832777afc357973494997bc0a5a09346);
+            
+        
+
+        marker_a0051a1b4907d07a3c96e8812111ff94.bindPopup(popup_555256d5929dcac87b5f0d1fe1682419)
+        ;
+
+        
+    
+    
+                marker_a0051a1b4907d07a3c96e8812111ff94.setIcon(icon_46abdfdc2c82db394c89283123270a30);
+            
+    
+            var marker_5e1ee31d015f7405f7f50d8786b8c1d3 = L.marker(
+                [53.3506, -6.2394],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_ce5e5d5ebfa098babb86d6c062506a07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ddaafe9d118ad40799468c2c18ca8faa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b40cc2bfbc2964083b81c3046a769aa = $(`<div id="html_5b40cc2bfbc2964083b81c3046a769aa" style="width: 100.0%; height: 100.0%;">Stations: Docklands</div>`)[0];
+                popup_ddaafe9d118ad40799468c2c18ca8faa.setContent(html_5b40cc2bfbc2964083b81c3046a769aa);
+            
+        
+
+        marker_5e1ee31d015f7405f7f50d8786b8c1d3.bindPopup(popup_ddaafe9d118ad40799468c2c18ca8faa)
+        ;
+
+        
+    
+    
+                marker_5e1ee31d015f7405f7f50d8786b8c1d3.setIcon(icon_ce5e5d5ebfa098babb86d6c062506a07);
+            
+    
+            var marker_a411cdc707132c19391e88ac4bf83c93 = L.marker(
+                [53.2936, -6.1359],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_02958eab7eb5de09587c34ead83cdaa4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff4fefc0be6c18b8e25cb0a8df26a818 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6a5068b57c2dd2cf9bddf99e18112f0 = $(`<div id="html_a6a5068b57c2dd2cf9bddf99e18112f0" style="width: 100.0%; height: 100.0%;">Stations: Dún Laoghaire</div>`)[0];
+                popup_ff4fefc0be6c18b8e25cb0a8df26a818.setContent(html_a6a5068b57c2dd2cf9bddf99e18112f0);
+            
+        
+
+        marker_a411cdc707132c19391e88ac4bf83c93.bindPopup(popup_ff4fefc0be6c18b8e25cb0a8df26a818)
+        ;
+
+        
+    
+    
+                marker_a411cdc707132c19391e88ac4bf83c93.setIcon(icon_02958eab7eb5de09587c34ead83cdaa4);
+            
+    
+            var marker_e41f31b48c5ce91c3ffd292ddc17fabe = L.marker(
+                [53.3048, -6.1776],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_a75924387d220263737ff980d51b4680 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0f72f4359eff0217e29f576dc1f14b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f544e22ec29fbdef40f497cc5c651fb7 = $(`<div id="html_f544e22ec29fbdef40f497cc5c651fb7" style="width: 100.0%; height: 100.0%;">Stations: Blackrock</div>`)[0];
+                popup_d0f72f4359eff0217e29f576dc1f14b3.setContent(html_f544e22ec29fbdef40f497cc5c651fb7);
+            
+        
+
+        marker_e41f31b48c5ce91c3ffd292ddc17fabe.bindPopup(popup_d0f72f4359eff0217e29f576dc1f14b3)
+        ;
+
+        
+    
+    
+                marker_e41f31b48c5ce91c3ffd292ddc17fabe.setIcon(icon_a75924387d220263737ff980d51b4680);
+            
+    
+            var marker_d7106573f19e2d3d47e79d092a361b9b = L.marker(
+                [53.2874, -6.1298],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_be48d4547a398d486fb31ec6c4fec264 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3cfa0277f3d97478969d23d9fa892f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b9b736c3173fe257a0f5925e9c09761 = $(`<div id="html_7b9b736c3173fe257a0f5925e9c09761" style="width: 100.0%; height: 100.0%;">Stations: Sandycove & Glasthule</div>`)[0];
+                popup_e3cfa0277f3d97478969d23d9fa892f0.setContent(html_7b9b736c3173fe257a0f5925e9c09761);
+            
+        
+
+        marker_d7106573f19e2d3d47e79d092a361b9b.bindPopup(popup_e3cfa0277f3d97478969d23d9fa892f0)
+        ;
+
+        
+    
+    
+                marker_d7106573f19e2d3d47e79d092a361b9b.setIcon(icon_be48d4547a398d486fb31ec6c4fec264);
+            
+    
+            var marker_4ab2ae70d76fae87768afc762e94cc31 = L.marker(
+                [53.2786, -6.1036],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_83ab3be83fae2219d73d5e913269884f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f528d04dc1f687066a1ce8d89617c6f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4032d5f9e291b3ea4e0b0b09cf555b9c = $(`<div id="html_4032d5f9e291b3ea4e0b0b09cf555b9c" style="width: 100.0%; height: 100.0%;">Stations: Dalkey</div>`)[0];
+                popup_f528d04dc1f687066a1ce8d89617c6f9.setContent(html_4032d5f9e291b3ea4e0b0b09cf555b9c);
+            
+        
+
+        marker_4ab2ae70d76fae87768afc762e94cc31.bindPopup(popup_f528d04dc1f687066a1ce8d89617c6f9)
+        ;
+
+        
+    
+    
+                marker_4ab2ae70d76fae87768afc762e94cc31.setIcon(icon_83ab3be83fae2219d73d5e913269884f);
+            
+    
+            var marker_c300f0cbb0b368c555565cb100417ff4 = L.marker(
+                [53.204, -6.0996],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_3d54b354bd928e10a842308174ccb4f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2ad0b3868db931f6f29c80e0249f976 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f43dd35ee447bc242b3cbd5656d0548c = $(`<div id="html_f43dd35ee447bc242b3cbd5656d0548c" style="width: 100.0%; height: 100.0%;">Stations: Bray</div>`)[0];
+                popup_c2ad0b3868db931f6f29c80e0249f976.setContent(html_f43dd35ee447bc242b3cbd5656d0548c);
+            
+        
+
+        marker_c300f0cbb0b368c555565cb100417ff4.bindPopup(popup_c2ad0b3868db931f6f29c80e0249f976)
+        ;
+
+        
+    
+    
+                marker_c300f0cbb0b368c555565cb100417ff4.setIcon(icon_3d54b354bd928e10a842308174ccb4f9);
+            
+    
+            var marker_1b7188690ecfcde55d4be22626d610b8 = L.marker(
+                [53.45, -6.154],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_a246cc2485414415db613131b6d4fd55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cab168b45a8454ce3cca1bc809999510 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_808abcabed96a42bb9ab2d91cc86b3f3 = $(`<div id="html_808abcabed96a42bb9ab2d91cc86b3f3" style="width: 100.0%; height: 100.0%;">Stations: Malahide</div>`)[0];
+                popup_cab168b45a8454ce3cca1bc809999510.setContent(html_808abcabed96a42bb9ab2d91cc86b3f3);
+            
+        
+
+        marker_1b7188690ecfcde55d4be22626d610b8.bindPopup(popup_cab168b45a8454ce3cca1bc809999510)
+        ;
+
+        
+    
+    
+                marker_1b7188690ecfcde55d4be22626d610b8.setIcon(icon_a246cc2485414415db613131b6d4fd55);
+            
+    
+            var marker_060bda54a9d1b0d73393ee82c50ac4d6 = L.marker(
+                [53.3648, -6.0736],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_3557ae6c6b116e6ca7ebfaa0fd300442 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1b3f594ce34e4f6c51f95893a20e6b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99ebc3404846dfd309993c8680a30263 = $(`<div id="html_99ebc3404846dfd309993c8680a30263" style="width: 100.0%; height: 100.0%;">Stations: Howth</div>`)[0];
+                popup_e1b3f594ce34e4f6c51f95893a20e6b8.setContent(html_99ebc3404846dfd309993c8680a30263);
+            
+        
+
+        marker_060bda54a9d1b0d73393ee82c50ac4d6.bindPopup(popup_e1b3f594ce34e4f6c51f95893a20e6b8)
+        ;
+
+        
+    
+    
+                marker_060bda54a9d1b0d73393ee82c50ac4d6.setIcon(icon_3557ae6c6b116e6ca7ebfaa0fd300442);
+            
+    
+            var marker_237d2b20ceec8383f944aecdbd7a40b2 = L.marker(
+                [53.359, -6.221],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_fde746265d46292ee4fd2a60816710fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e71d46622408b052795c51657707617e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34b2baa71ba138badde15f2baccd9a04 = $(`<div id="html_34b2baa71ba138badde15f2baccd9a04" style="width: 100.0%; height: 100.0%;">Stations: Clontarf Road</div>`)[0];
+                popup_e71d46622408b052795c51657707617e.setContent(html_34b2baa71ba138badde15f2baccd9a04);
+            
+        
+
+        marker_237d2b20ceec8383f944aecdbd7a40b2.bindPopup(popup_e71d46622408b052795c51657707617e)
+        ;
+
+        
+    
+    
+                marker_237d2b20ceec8383f944aecdbd7a40b2.setIcon(icon_fde746265d46292ee4fd2a60816710fa);
+            
+    
+            var marker_0082ef98171b1bdb3cd9a17e36ad1ad7 = L.marker(
+                [53.364, -6.211],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_e9d01dcfc3fe9a5a00739ba1cdefa51b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fae1f5f4ae839f406cc31f982c446794 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b406052f9485367e582c6991c23fce0 = $(`<div id="html_0b406052f9485367e582c6991c23fce0" style="width: 100.0%; height: 100.0%;">Stations: Killester</div>`)[0];
+                popup_fae1f5f4ae839f406cc31f982c446794.setContent(html_0b406052f9485367e582c6991c23fce0);
+            
+        
+
+        marker_0082ef98171b1bdb3cd9a17e36ad1ad7.bindPopup(popup_fae1f5f4ae839f406cc31f982c446794)
+        ;
+
+        
+    
+    
+                marker_0082ef98171b1bdb3cd9a17e36ad1ad7.setIcon(icon_e9d01dcfc3fe9a5a00739ba1cdefa51b);
+            
+    
+            var marker_85f91646938a4102ff4adf3e24ef3ad3 = L.marker(
+                [53.377, -6.19],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_04126833a23276d995916f3574508d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_087ff678ebcff89f9bc4b6b2fcdd016d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a33a7e19b31e3da8974cf105fe5aa70 = $(`<div id="html_0a33a7e19b31e3da8974cf105fe5aa70" style="width: 100.0%; height: 100.0%;">Stations: Raheny</div>`)[0];
+                popup_087ff678ebcff89f9bc4b6b2fcdd016d.setContent(html_0a33a7e19b31e3da8974cf105fe5aa70);
+            
+        
+
+        marker_85f91646938a4102ff4adf3e24ef3ad3.bindPopup(popup_087ff678ebcff89f9bc4b6b2fcdd016d)
+        ;
+
+        
+    
+    
+                marker_85f91646938a4102ff4adf3e24ef3ad3.setIcon(icon_04126833a23276d995916f3574508d4d);
+            
+    
+            var marker_22e33b4c9d01eb12e3748eb095093962 = L.marker(
+                [53.423, -6.15],
+                {
+}
+            ).addTo(map_bdda2a58d4a3c4de47732677e8b0476a);
+        
+    
+            var icon_2182ff3ce7ba39250355b678d7b4a207 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d019f02fce55a44e50dfce6cda743f9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13baf10283e0cb5b4a1fb2ac857c9002 = $(`<div id="html_13baf10283e0cb5b4a1fb2ac857c9002" style="width: 100.0%; height: 100.0%;">Stations: Portmarnock</div>`)[0];
+                popup_d019f02fce55a44e50dfce6cda743f9d.setContent(html_13baf10283e0cb5b4a1fb2ac857c9002);
+            
+        
+
+        marker_22e33b4c9d01eb12e3748eb095093962.bindPopup(popup_d019f02fce55a44e50dfce6cda743f9d)
+        ;
+
+        
+    
+    
+                marker_22e33b4c9d01eb12e3748eb095093962.setIcon(icon_2182ff3ce7ba39250355b678d7b4a207);
+            
+</script>
+</html>
